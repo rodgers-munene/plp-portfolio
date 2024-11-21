@@ -7,8 +7,8 @@
 body{
     width: 100vw;
     height: 100vh;
-    background-color: grey;
-    overflow: hidden;
+    background-color: #000;
+    overflow-x: hidden;
 }
 
 /* styling the header section */
@@ -19,6 +19,10 @@ header{
     display: flex;
     justify-content: space-around;
     align-items: center;
+}
+/* logo */
+.logo{
+    color: white;
 }
 
 
@@ -37,11 +41,11 @@ header{
 
 .nav-links li a {
     text-decoration: none;
-    color: black;
+    color: white;
     font-size: large;
 }
 
-/* hr line */
+/* styling the hr line below the header */
 
 .line{
     width: 100%;
@@ -54,6 +58,7 @@ hr{
     text-align: center;
 }
 
+
 /* styling the main section */
 
 /* home section */
@@ -61,4 +66,63 @@ hr{
 .home-section{
     width: 100%;
     height: calc(100vh - 70px);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.hello-div{
+    border: 1px solid grey;
+    width: 24rem;
+    height: auto;
+    padding: 10px;
+    border-radius: 10px;
+    background-color: rgba(255, 255, 255, 0.1);
+    color: whitesmoke;
+    letter-spacing: 0.8px;
+}
+
+span{
+    color: thistle;
+}
+.hello-div_title{
+    font-size: 22px; 
+    margin-bottom: 15px;   
+}
+.hello-div_name{
+    margin-bottom: 15px;
+    font-size:24px ;
+}
+.hello-div_text{
+    font-size: 18px;
+    margin-bottom: 19px;
+}
+.hello-div_links{
+    position: relative;
+    display: flex;
+    width: 100%;
+    height: auto;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 15px;
+}
+.btn{
+    padding: 9px;
+    border-radius: 7px;
+    background-color: red;
+    color: white;
+    border: none;
+    outline: none;
+}
+.home-links{
+    width: 50%;
+    display: flex;
+    justify-content: space-between;
+}
+
+
+/* about me section */
+
+.about-section{
+    width: 100vw;
+    height: 100vh;
 }
