@@ -1,0 +1,64 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    width: 100vw;
+    height: 100vh;
+    background-color: grey;
+    overflow: hidden;
+}
+
+/* styling the header section */
+
+header{
+    width: 100vw;
+    height: 70px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+
+/* navigation links */
+.nav-links{
+    width: 40vw;
+    display: flex;
+    justify-content: space-around;
+    
+    /* border: 1px solid black; */
+}
+
+.nav-links li{
+    list-style: none;
+}
+
+.nav-links li a {
+    text-decoration: none;
+    color: black;
+    font-size: large;
+}
+
+/* hr line */
+
+.line{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+hr{
+    width: 85%;
+    text-align: center;
+}
+
+/* styling the main section */
+
+/* home section */
+
+.home-section{
+    width: 100%;
+    height: calc(100vh - 70px);
+}
