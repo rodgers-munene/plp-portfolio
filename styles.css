@@ -20,6 +20,7 @@ header{
     justify-content: space-around;
     align-items: center;
     position: fixed;
+    background-color: rgba(0, 0, 0, 0.2);
 }
 /* logo */
 .logo{
@@ -85,8 +86,11 @@ header hr{
     
 }
 
-span{
+.green-span{
     color: lightgreen;
+}
+.blue-span{
+    color: lightblue;
 }
 .hello-div_title{
     font-size: 24px; 
@@ -110,8 +114,8 @@ span{
     margin-bottom: 20px;
 }
 .btn{
-    padding: 9px;
-    border-radius: 7px;
+    padding: 10px;
+    /* border-radius: 7px; */
     background-color: darkgreen;
     color: white;
     border: none;
@@ -154,7 +158,7 @@ span{
     
 }
 .about-text h1{
-    color: darkgreen;
+    color: lightgreen;
     font-size: 35px;
     margin-top: 10px;
 }
@@ -176,10 +180,96 @@ span{
 .about-summary ul{
     display: grid;
     grid-template-columns: repeat(2, 50%);
-    margin: 10px auto;
+    margin: 15px auto;
     gap: 7px;
 }
 .about-summary ul li{
     list-style: none;
     color: white;
+}
+.collaborate-btn{
+    padding: 10px;
+    font-size: 17px;
+    background-color: darkgreen;
+    margin: 15px auto;
+    border: none;
+    outline: none;
+    color: #fff;
+}
+
+/* skills section */
+
+.skills{
+    position: relative;
+}
+
+.skills-title{
+     color: lightgreen;
+     top: 80px;
+     left: 40%;
+     position: absolute;
+}
+
+.skills-section{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    /* column-gap: 45px; */
+    /* align-items: center; */
+    color: white;
+}
+
+.frontend-skills, .backend-skills, .api-skills{
+    margin-top: 120px;
+    height: 250px;
+}
+.frontend-skills, .backend-skills, .api-skills, .personal-skills, .education{
+    /* border: 1px solid white; */
+    width: 400px;
+}
+.personal-skills ul{
+    display: flex;
+    justify-content: space-between;
+}
+h3{
+    color: lightgreen;
+    text-align: center;
+    margin-bottom: 10px;
+}
+.skill {
+    display: flex;
+    align-items: center;
+    margin-bottom: 1rem;
+    padding: 5px;
+    /* border: 1px solid white; */
+}
+  
+label {
+    margin-right: 1rem;
+    font-weight: bold;
+    min-width: 6rem;
+    /* border: 1px solid white; */
+}
+  
+.progress-container {
+    width: 200px;
+    height: 10px;
+    background: #ddd;
+    border-radius: 5px;
+    overflow: hidden;
+    margin-right: 1rem;
+    position: relative;
+}
+
+.progress-bar {
+    height: 100%;
+    background: linear-gradient(90deg, #6775eb, #221085);
+    width: 0; /* Updated dynamically using the inline `style` attribute */
+}
+
+.percentage {
+    font-size: 1rem;
+    color: #fff;
 }
