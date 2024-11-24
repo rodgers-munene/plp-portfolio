@@ -22,6 +22,12 @@ header{
     position: fixed;
     background-color: rgba(0, 0, 0, 0.2);
     z-index: 999;
+    transition: all 0.3s ease-in-out;
+}
+
+/* scrollbar hidden feature */
+header.hidden{
+    transform: translateY(-100%);
 }
 /* logo */
 .logo{
@@ -143,12 +149,24 @@ header hr{
 
 /* about me section */
 
+.my-image{
+    width:200px;
+    height: 350px;
+    float: right;
+    border-radius: 10px;
+}
+
+.about-image{
+    /* border: 1px solid white; */
+}
+
 .about-section{
     width: 100vw;
     height: 100vh;
     display: flex;
     background-color: #171717;
     align-items: center;
+    justify-content: space-around;
 }
 .about-text{
     margin-left: 10rem;
@@ -209,6 +227,7 @@ header hr{
      top: 80px;
      left: 40%;
      position: absolute;
+     font-size: 26px;
 }
 
 .skills-section{
@@ -304,7 +323,7 @@ label {
 
 .filmsage-div, .pickify-div, .klin-div{
     width: 390px;
-    height: 70vh;
+    height: 65vh;
     /* border: 1px solid white; */
     position: relative;
     overflow: hidden;
@@ -411,4 +430,23 @@ label {
     color: white;
     border: none;
     outline: none;
+}
+
+/* footer */
+
+footer{
+    width: 100vw;
+    text-align: center;
+    margin-bottom: 20px;
+    padding: 4px auto;
+    color: gray;
+}
+small{
+    font-size: medium;
+}
+
+/* hover effects */
+button:hover{
+    transform: scale(1.05);
+    cursor: pointer;
 }
