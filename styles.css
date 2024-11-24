@@ -371,3 +371,44 @@ label {
 .klin-two{
     right: -90px;
 }
+
+/* Contact me section */
+.contact-me{
+    width: 100vw;
+    height: 50vh;
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    align-items: center;
+}
+.contact-div{
+    margin-top: 70px;
+
+}
+.contact-div h1{
+    color: lightgreen;
+    text-align: center;
+    margin-top: 10px;
+}
+.contact-div input{
+    width: 350px;
+    height: 40px;
+    padding-left: 4px;
+    margin-top: 10px;
+    color: black;
+}
+.contact-div textarea{
+    width: 350px;
+    padding-left: 4px;
+    height: 50px;
+    margin-top: 10px;
+}
+.contact-div button{
+    float: right;
+    padding: 10px 15px;
+    margin-top: 10px;
+    background-color: darkgreen;
+    color: white;
+    border: none;
+    outline: none;
+}
