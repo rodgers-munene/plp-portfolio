@@ -21,6 +21,7 @@ header{
     align-items: center;
     position: fixed;
     background-color: rgba(0, 0, 0, 0.2);
+    z-index: 999;
 }
 /* logo */
 .logo{
@@ -272,4 +273,101 @@ label {
 .percentage {
     font-size: 1rem;
     color: #fff;
+}
+
+/* Projects sections */
+
+.projects-section{
+    width: 100vw;
+    height: 100vh;
+    background-color: #171717;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    /* align-items: center; */
+}
+.projects-intro{
+    /* background-color: #242424; */
+    padding: 10px;
+    border-radius: 10px;
+    height: 100px;
+    margin-top: 80px;
+}
+.projects-intro h1{
+    color: lightgreen;
+    margin-bottom: 10px;
+    text-align: center;
+}
+.projects-intro p{
+    color: white;
+}
+
+.filmsage-div, .pickify-div, .klin-div{
+    width: 390px;
+    height: 70vh;
+    /* border: 1px solid white; */
+    position: relative;
+    overflow: hidden;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: #242424;
+}
+.filmsage-div h2{
+    color: #ddd;
+}
+.filmsage-div img{
+    width: 250px;
+    height: 270px;
+    position: absolute;
+    transform: rotate(-15deg);
+}
+.image-one{
+    left: -25px;
+    bottom: -40px;
+    
+}
+.image-two{
+    right: -95px;
+    bottom: -30px;
+}
+.pickify-div h2{
+    color: #ddd;
+}
+
+.pickify-div img{
+    width: 250px;
+    height: 350px;
+    position: absolute;
+    bottom: -70px;
+    transform: rotate(-15deg);
+}
+.pickify-one{
+    left: -35px;
+}
+.pickify-two{
+    right: -95px;
+}
+.stack-span{
+    padding: 7px;
+    background-color: blueviolet;
+    margin-left: 9px;
+    border-radius: 10px;
+    color: white;
+    font-size: 18px;
+}
+.klin-div h2{
+    color: #ddd;
+}
+.klin-div img{
+    width: 250px;
+    height: 350px;
+    position: absolute;
+    bottom: -100px;
+    transform: rotate(-15deg);
+}
+.klin-one{
+    left: -35px;
+}
+.klin-two{
+    right: -90px;
 }
