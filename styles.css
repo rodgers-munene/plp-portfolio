@@ -720,4 +720,10 @@ button:hover{
     .hello-div_text{
         font-size: 16px;
     }
+    .hello-div_title{
+        font-size: 19px;
+    }
+    .about-summary ul{
+        grid-template-columns: repeat(2, 30%);
+    }
 }
