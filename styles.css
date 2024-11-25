@@ -319,7 +319,7 @@ header hr{
 }
 .about-text h1{
     color: lightgreen;
-    font-size: 35px;
+    font-size: 32px;
     margin-top: 10px;
 }
 .about-text h2{
@@ -494,7 +494,7 @@ label {
     transform: rotate(-15deg);
 }
 .project-about p{
-    font-size: 26px;
+    font-size: 24px;
     color: #fff;
     font-weight: 900;
 }
@@ -732,7 +732,17 @@ button:hover{
     .about-summary ul{
         grid-template-columns: repeat(2, 30%);
     }
+    .about-image{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+    .my-image-div{
+        border: 1px solid white;
+        
+    }
     .my-image{
         float: unset;
+        margin-bottom: 20px;
     }
 }
