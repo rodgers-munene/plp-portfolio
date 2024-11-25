@@ -1,6 +1,7 @@
 # 📂 **Rodgers Munene's Portfolio**
 
 Welcome to my personal portfolio! This project showcases my journey, skills, and accomplishments as a software developer. Explore my work and get to know me better. 
+
 [Live Website!](https://rodgers-munene.github.io/plp-portfolio/)
 ---
 
