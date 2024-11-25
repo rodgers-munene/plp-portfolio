@@ -49,3 +49,23 @@ function eraseEffect(){
     }
 }
 typewriterEffect()
+
+
+// hamburger button
+
+const hamburger = document.querySelector('.ham-button')
+const navLinks = document.querySelector('.ham-nav')
+const hamLinks = document.querySelectorAll('.ham-links li')
+
+
+hamburger.addEventListener('click', () =>{
+  hamburger.classList.toggle('active');
+  navLinks.classList.toggle('active')
+})
+
+hamLinks.forEach(link => {
+  link.addEventListener('click', () =>{
+    hamburger.classList.remove('active')
+    navLinks.classList.remove('active')
+  })
+})

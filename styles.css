@@ -9,6 +9,7 @@ body{
     height: 100vh;
     background-color: #000;
     overflow-x: hidden;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 
@@ -54,12 +55,75 @@ header{
     width: 100vw;
     height: 70px;
     display: flex;
+    position: relative;
     justify-content: space-around;
     align-items: center;
     position: fixed;
     background-color: rgba(0, 0, 0, 0.2);
     z-index: 999;
     transition: all 0.3s ease-in-out;
+}
+/* hamburger menu */
+.ham-button{
+    width: 40px;
+    height: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    /* position: absolute; */
+    cursor: pointer;
+    display: none;
+}
+.ham-line{
+    background-color: white;
+    width: 100%;
+    height: 4px;
+    border-radius: 10px;
+    transition: all 0.3s ease-in-out;
+}
+.ham-button.active .ham-line:nth-child(1){
+    transform: rotate(45deg) translateY(17px);
+}
+.ham-button.active .ham-line:nth-child(2){
+    opacity: 0;
+}
+.ham-button.active .ham-line:nth-child(3){
+    transform: rotate(-45deg) translateY(-20px);
+}
+
+.ham-links{
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    background-color: rgba(0, 0, 0, 0.6);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    right: 40px;
+    top: 70px;
+}
+.ham-links li{
+    padding-left: 10px;
+    padding-top: 5px;
+    height: 50px;
+    width: 100%;
+    list-style: none;
+}
+.ham-links li:hover{
+    background-color: rgba(0, 0, 0, 0.8);
+}
+.ham-links li a{
+    text-decoration: none;
+    color: white;
+    font-size: large;
+}
+.ham-nav{
+    display: none;
+}
+.ham-nav.active{
+    display: block;
 }
 
 /* scrollbar hidden feature */
@@ -249,6 +313,10 @@ header hr{
     padding: 3px;
     
 }
+.about-title{
+    width: 29%;
+    margin-bottom: 20px;
+}
 .about-text h1{
     color: lightgreen;
     font-size: 35px;
@@ -273,7 +341,8 @@ header hr{
     display: grid;
     grid-template-columns: repeat(2, 50%);
     margin: 15px auto;
-    gap: 7px;
+    gap: 15px;
+    
 }
 .about-summary ul li{
     list-style: none;
@@ -305,12 +374,13 @@ header hr{
 
 .skills-section{
     width: 100vw;
-    height: 100vh;
+    height: 110vh;
     display: flex;
     flex-wrap: wrap;
+    /* flex-direction: column; */
     justify-content: space-around;
     /* column-gap: 45px; */
-    /* align-items: center; */
+    align-items: center;
     color: white;
 }
 
@@ -381,6 +451,11 @@ label {
 .projects-section a{
     text-decoration: none;
 }
+.project-title{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
 
 .projects-intro{
     /* background-color: #242424; */
@@ -418,6 +493,11 @@ label {
     position: absolute;
     transform: rotate(-15deg);
 }
+.project-about p{
+    font-size: 26px;
+    color: #fff;
+    font-weight: 900;
+}
 .image-one{
     left: -25px;
     bottom: -40px;
@@ -435,7 +515,7 @@ label {
     width: 250px;
     height: 350px;
     position: absolute;
-    bottom: -70px;
+    bottom: -100px;
     transform: rotate(-15deg);
 }
 .pickify-one{
@@ -459,7 +539,7 @@ label {
     width: 250px;
     height: 350px;
     position: absolute;
-    bottom: -100px;
+    bottom: -120px;
     transform: rotate(-15deg);
 }
 .klin-one{
@@ -531,4 +611,113 @@ button:hover{
 .pickify-div:hover, .filmsage-div:hover, .klin-div:hover{
     transform: scale(1.05);
 
+}
+
+@media (max-width: 1024px) {
+    nav{
+        display: none;
+    }  
+    .git-link a {
+        display: none;
+    }  
+    .ham-button{
+        display: flex;
+    }
+    header{
+        justify-content: space-between;
+    }
+    .line{
+        display: none;
+    }
+    .ham-button{
+        margin-right: 40px;
+    }
+    .logo{
+        margin-left: 40px;
+    }
+    .home-section{
+        justify-content: center;
+    }
+    .hello-div{
+        margin-left: unset;
+    }
+    .background-image img{
+        object-fit: cover;
+        
+    }
+    .about-section{
+        flex-direction: column-reverse;
+        /* height: 150vh; */
+    }
+    .about-text{
+        width: 100vw;
+        margin: unset;
+        padding: 20px;
+    }
+    .about-title{
+        width: 100%;
+        
+    }
+    .about-title h1{
+        text-align: center;
+    }
+    .about-title hr{
+        display: none;
+    }
+    .skills-section{
+        flex-direction: column;
+        /* height: 110vh; */
+    }
+    .frontend-skills, .backend-skills, .api-skills, .personal-skills, .education{
+        width: 350px;   
+    }
+    .frontend-skills, .backend-skills, .api-skills{
+        height: 200px;
+    }
+    .skills-title{
+        left: 30%;
+    }
+    .projects-section{
+        height: 170vh;
+    }
+    
+}
+
+@media  (max-width: 768px) {
+    .about-section{
+        height: 130vh;
+    }
+    .skills-section{
+        flex-wrap: nowrap;
+        align-items: center;
+        height: 170vh;
+    }
+    .skills-title{
+        left: 25%;
+    }
+    .projects-section{
+        height: 200vh;
+    }
+    .filmsage-div, .pickify-div, .klin-div{
+        width: 300px;
+        height: 50vh;
+    }
+    .project-title{
+        flex-direction: column;
+    }
+    .project-title div{
+        margin-top: 10px;
+    }
+    .stack-span{
+        padding: 5px;
+    }
+    .project-about p{
+       font-size: 18px;
+    }
+    .hello-div{
+        width: 24rem;
+    }
+    .hello-div_text{
+        font-size: 16px;
+    }
 }
