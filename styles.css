@@ -737,10 +737,6 @@ button:hover{
         display: flex;
         justify-content: center;
     }
-    .my-image-div{
-        border: 1px solid white;
-        
-    }
     .my-image{
         float: unset;
         margin-bottom: 20px;
