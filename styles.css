@@ -687,6 +687,12 @@ button:hover{
     .about-section{
         height: 130vh;
     }
+    .ham-button{
+        margin-right: 10px;
+    }
+    .logo{
+        margin-left: 10px;
+    }
     .skills-section{
         flex-wrap: nowrap;
         align-items: center;
@@ -725,5 +731,8 @@ button:hover{
     }
     .about-summary ul{
         grid-template-columns: repeat(2, 30%);
+    }
+    .my-image{
+        float: unset;
     }
 }
