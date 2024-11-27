@@ -16,7 +16,7 @@ window.addEventListener('scroll', () => {
 
 // typewriter effect
 
-const words = ["print('Hello, World!')", "print('Hola, Mundo!')", "print('Hola, Mundo!')"]
+const words = ["print('Hello, World!')", "print('Hola, Mundo!')", "print('Hallo, Welt!')"]
 const typingSpeed = 150
 const erasingSpeed = 100
 const delayBetweenWords = 1000
