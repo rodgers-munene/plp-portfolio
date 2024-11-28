@@ -552,7 +552,7 @@ label {
 /* Contact me section */
 .contact-me{
     width: 100vw;
-    height: 50vh;
+    height: 70vh;
     display: flex;
     flex-direction: column;
     /* justify-content: center; */
@@ -647,7 +647,7 @@ button:hover{
     }
     .about-section{
         flex-direction: column-reverse;
-        /* height: 150vh; */
+        height: 170vh;
     }
     .about-text{
         width: 100vw;
@@ -665,27 +665,39 @@ button:hover{
         display: none;
     }
     .skills-section{
-        flex-direction: column;
-        /* height: 110vh; */
+        /* flex-direction: column; */
+        height: 170vh;
     }
     .frontend-skills, .backend-skills, .api-skills, .personal-skills, .education{
         width: 350px;   
     }
     .frontend-skills, .backend-skills, .api-skills{
+        margin-top: 30px;
         height: 200px;
     }
     .skills-title{
-        left: 30%;
+        position: unset;
+        text-align: center;
+        margin-top: 40px
     }
     .projects-section{
         height: 170vh;
+    }
+    .about-image{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+    .my-image{
+        float: unset;
+        margin-bottom: 20px;
     }
     
 }
 
 @media  (max-width: 768px) {
     .about-section{
-        height: 130vh;
+        height: 170vh;
     }
     .ham-button{
         margin-right: 10px;
@@ -693,20 +705,33 @@ button:hover{
     .logo{
         margin-left: 10px;
     }
+    .about-text h1{
+        font-size: 28px;
+        margin-top: 5px;
+    }
+    
+    .about-text p{
+        font-size: 17px;
+        letter-spacing: 0.6px;
+        margin: 10px auto;
+    }
     .skills-section{
-        flex-wrap: nowrap;
+        flex-wrap: wrap;
         align-items: center;
-        height: 170vh;
+        height: 200vh;
     }
     .skills-title{
         left: 25%;
     }
     .projects-section{
-        height: 200vh;
+        height: 250vh;
     }
     .filmsage-div, .pickify-div, .klin-div{
         width: 300px;
-        height: 50vh;
+        height: 80vh;
+    }
+    .frontend-skills, .backend-skills, .api-skills, .personal-skills, .education{
+        width: 300px;   
     }
     .project-title{
         flex-direction: column;
@@ -719,6 +744,7 @@ button:hover{
     }
     .project-about p{
        font-size: 18px;
+       
     }
     .hello-div{
         width: 24rem;
@@ -732,13 +758,10 @@ button:hover{
     .about-summary ul{
         grid-template-columns: repeat(2, 30%);
     }
-    .about-image{
-        width: 100%;
-        display: flex;
-        justify-content: center;
-    }
-    .my-image{
-        float: unset;
-        margin-bottom: 20px;
+    
+}
+@media  (max-width: 630px) {
+    .projects-section{
+        height: 300vh;
     }
 }
