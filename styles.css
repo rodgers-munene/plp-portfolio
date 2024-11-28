@@ -647,7 +647,7 @@ button:hover{
     }
     .about-section{
         flex-direction: column-reverse;
-        height: 140vh;
+        height: 170vh;
     }
     .about-text{
         width: 100vw;
@@ -722,6 +722,9 @@ button:hover{
     }
     .projects-section{
         height: 200vh;
+    }
+    .projects-intro{
+        margin-top: 40px;
     }
     .filmsage-div, .pickify-div, .klin-div{
         width: 300px;
