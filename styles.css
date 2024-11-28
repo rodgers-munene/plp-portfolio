@@ -724,7 +724,7 @@ button:hover{
         height: 200vh;
     }
     .projects-intro{
-        margin-top: 40px;
+        margin-top: unset;
     }
     .filmsage-div, .pickify-div, .klin-div{
         width: 300px;
