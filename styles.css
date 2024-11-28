@@ -697,7 +697,7 @@ button:hover{
 
 @media  (max-width: 768px) {
     .about-section{
-        height: 170vh;
+        height: 150vh;
     }
     .ham-button{
         margin-right: 10px;
@@ -724,7 +724,7 @@ button:hover{
         left: 25%;
     }
     .projects-section{
-        height: 170vh;
+        height: 200vh;
     }
     .filmsage-div, .pickify-div, .klin-div{
         width: 300px;
