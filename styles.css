@@ -552,7 +552,7 @@ label {
 /* Contact me section */
 .contact-me{
     width: 100vw;
-    height: 70vh;
+    height: 50vh;
     display: flex;
     flex-direction: column;
     /* justify-content: center; */
@@ -724,7 +724,7 @@ button:hover{
         left: 25%;
     }
     .projects-section{
-        height: 200vh;
+        height: 170vh;
     }
     .filmsage-div, .pickify-div, .klin-div{
         width: 300px;
